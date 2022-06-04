@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="255.0" maxWidth="200.0" prefHeight="235.0" prefWidth="200.0" styleClass="item" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.fxui.Store.ProductController">
+    <stylesheets>
+        <URL value="@../Css/FxmlCss.css" />
+    </stylesheets> 
+    <children>
+        <ImageView fx:id="Img" fitHeight="160.0" fitWidth="188.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="3.0" />
+        <Label fx:id="lbName" alignment="CENTER" layoutX="12.0" layoutY="172.0" prefHeight="27.0" prefWidth="176.0" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnDetail" layoutX="50.0" layoutY="202.0" onAction="#btnDetailClick" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: green;" text="Xem chi tiết" textFill="WHITE" />
+    </children>
+</AnchorPane>

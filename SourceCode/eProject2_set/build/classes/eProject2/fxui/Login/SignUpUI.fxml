@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.fxui.Login.SignUpUIController">
+    <stylesheets>
+        <URL value="@../Css/FxmlCss.css" />
+    </stylesheets>
+    <children>
+      <AnchorPane layoutX="350.0" maxHeight="510.0" maxWidth="350.0" minHeight="510.0" minWidth="350.0" prefHeight="510.0" prefWidth="350.0">
+         <children>
+                <JFXButton fx:id="btnSubmit" layoutX="195.0" layoutY="457.0" onAction="#btnSubmitClick" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: green;" text="Đăng ký" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="btnBack" layoutX="35.0" layoutY="457.0" onAction="#btnBackClick" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: green;" text="Quay lại" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="25" />
+                    </graphic>
+                </JFXButton>
+                <Label alignment="CENTER" layoutX="109.0" layoutY="10.0" prefHeight="60.0" prefWidth="150.0" text="Đăng ký" textFill="#aaaaaa">
+                    <font>
+                        <Font name="System Bold Italic" size="34.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="txtUserName" layoutX="35.0" layoutY="85.0" prefHeight="25.0" prefWidth="280.0" promptText="Tài khoản">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField fx:id="txtPassword" layoutX="35.0" layoutY="155.0" prefHeight="25.0" prefWidth="280.0" promptText="Mật khẩu">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXPasswordField>
+                <JFXTextField fx:id="txtName" focusColor="#646a7c" layoutX="35.0" layoutY="224.0" prefHeight="25.0" prefWidth="280.0" promptText="Họ và tên">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtPhoneNum" layoutX="35.0" layoutY="294.0" prefHeight="25.0" prefWidth="280.0" promptText="Số điện thoại">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtEmail" layoutX="35.0" layoutY="363.0" prefHeight="25.0" prefWidth="280.0" promptText="Email">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+            <Label fx:id="lbMessage1" layoutX="35.0" layoutY="125.0" prefHeight="30.0" prefWidth="280.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbMessage2" layoutX="35.0" layoutY="194.0" prefHeight="30.0" prefWidth="280.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbMessage3" layoutX="35.0" layoutY="264.0" prefHeight="30.0" prefWidth="280.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbMessage4" layoutX="35.0" layoutY="333.0" prefHeight="30.0" prefWidth="280.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbMessage5" layoutX="35.0" layoutY="402.0" prefHeight="30.0" prefWidth="280.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="510.0" prefWidth="350.0" style="-fx-background-color: #DDDDDD;">
+         <children>
+            <ImageView fitHeight="350.0" fitWidth="394.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Store/Image/user-244-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

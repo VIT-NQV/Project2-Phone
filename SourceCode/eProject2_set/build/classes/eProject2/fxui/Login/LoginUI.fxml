@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--<?import java.net.URL?>-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.fxui.Login.LoginController">
+<!--    <stylesheets>
+        <URL value="@../Css/FxmlCss.css" />
+    </stylesheets> -->
+    <children>
+      <AnchorPane layoutX="350.0" prefHeight="510.0" prefWidth="350.0">
+         <children>
+                <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="75.0" layoutY="51.0" prefHeight="60.0" prefWidth="200.0" text="Đăng Nhập" textFill="#aaaaaa">
+                    <font>
+                        <Font name="System Bold Italic" size="34.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="txtUserName" layoutX="35.0" layoutY="153.0" prefHeight="50.0" prefWidth="280.0" promptText="Tài khoản" unFocusColor="#aaaaaa">
+               <font>
+                  <Font size="16.0" />
+               </font>
+                </JFXTextField>
+                <JFXPasswordField fx:id="txtPassword" focusColor="#59bde4" layoutX="35.0" layoutY="215.0" prefHeight="50.0" prefWidth="280.0" promptText="Mật khẩu" unFocusColor="#aaaaaa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+                </JFXPasswordField>
+                <JFXButton fx:id="btnLogin" layoutX="204.0" layoutY="288.0" onAction="#btnLoginClick" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: green;" text="Đăng nhập" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+                </JFXButton>
+                <JFXButton fx:id="btnSignUp" layoutX="75.0" layoutY="419.0" onAction="#btnSignUpClick" prefHeight="40.0" prefWidth="200.0" text="Tạo tài khoản mới" textFill="GREEN" underline="true">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </JFXButton>
+                <JFXComboBox fx:id="ComboBox" layoutX="35.0" layoutY="287.0" prefHeight="40.0" prefWidth="118.0" promptText="Đăng nhập bởi" unFocusColor="#aaaaaa" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="510.0" prefWidth="350.0" style="-fx-background-color: #DDDDDD;">
+         <children>
+            <ImageView fitHeight="350.0" fitWidth="394.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Store/Image/user-244-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

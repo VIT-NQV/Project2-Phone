@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 21, 2021, 3:48:58 PM
+    Author     : Nguyễn Quốc Việt
+*/
+
+.button:hover {
+    -fx-background-color: #0099CC;
+}
+
+.item {
+    -fx-background-color: #DDDDDD;
+    -fx-background-radius: 20;
+}
+
+.text {
+    -fx-text-fill: green;
+}
+
